@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authenticater</title>
+</head>
+<body>
+    <h3>Edson Garcia</h3>
+    <h4>WEB PROGRAMING IUPUI 2023</h4>
+    <script>
+        // Functions to check username and password
+        function checkCredentials(userId, password) {
+            if (userId == "admin" & password === "secret") {
+                // if the right credentials
+                console.log("Welcome admin!");
+                alert("Welcome admin!");
+            } else {
+                // the wrong credentials
+                console.log("BAD LOGIN CREDENTIALS");
+                alert("BAD LOGIN CREDENTIALS");
+            }
+        }
+
+        // Prompts for the username and password
+        var username = prompt("Enter your username:");
+        var password = prompt("Enter your password:");
+
+        // Calling the functions to check credentials
+        checkCredentials(username, password);
+    </script>
+</body>
+</html>
